@@ -67,7 +67,6 @@
     }
     button.tab{
       border:1px solid var(--border);
-      background:#fff;
       color:var(--text);
       border-radius:14px;
       padding:12px 10px;
@@ -79,12 +78,8 @@
       border-color:#b8b0a6;
       box-shadow: inset 0 0 0 1px rgba(0,0,0,.03);
     }
-    .panel{
-      display:none;
-    }
-    .panel.active{
-      display:block;
-    }
+    .panel{ display:none; }
+    .panel.active{ display:block; }
     .stage-card{
       background:var(--card);
       border:1px solid var(--border);
@@ -105,9 +100,7 @@
       color:var(--muted);
       font-size:.95rem;
     }
-    .schedule{
-      padding:8px 0;
-    }
+    .schedule{ padding:8px 0; }
     .row{
       display:grid;
       grid-template-columns:120px 1fr;
@@ -152,13 +145,11 @@
 
     <div class="tabs">
       <div class="tablist">
-        <button class="tab active" data-target="capen" style="background:var(--capen)">Capen</button>
-        <button class="tab" data-target="chapin" style="background:var(--chapin)">Chapin</button>
-        <button class="tab" data-target="haven" style="background:var(--haven)">Haven–Wesley</button>
-        <button class="tab" data-target="tyler" style="background:var(--tyler)">Tyler</button>
+        <button class="tab active" data-target="capen" style="background:var(--capen)">Capen</button> <button class="tab" data-target="chapin" style="background:var(--chapin)">Chapin Deck</button> <button class="tab" data-target="haven" style="background:var(--haven)">Haven–Wesley</button> <button class="tab" data-target="tyler" style="background:var(--tyler)">Tyler</button>
       </div>
     </div>
 
+    
     <section id="capen" class="panel active">
       <div class="stage-card">
         <div class="stage-head" style="background:var(--capen)">
@@ -178,7 +169,6 @@
         </div>
       </div>
     </section>
-
     <section id="chapin" class="panel">
       <div class="stage-card">
         <div class="stage-head" style="background:var(--chapin)">
@@ -188,17 +178,16 @@
         <div class="schedule">
           <div class="row"><div class="time">12:00–12:20</div><div class="performer">DJ Woodear</div></div>
           <div class="row"><div class="time">12:20–12:40</div><div class="performer">DJ Woodear</div></div>
-          <div class="row"><div class="time">12:40–1:00</div><div class="performer open">OPEN</div></div>
-          <div class="row"><div class="time">1:00–1:20</div><div class="performer open">OPEN</div></div>
-          <div class="row"><div class="time">1:20–1:40</div><div class="performer open">OPEN</div></div>
-          <div class="row"><div class="time">1:40–2:00</div><div class="performer open">OPEN</div></div>
-          <div class="row"><div class="time">2:00–2:20</div><div class="performer open">OPEN</div></div>
-          <div class="row"><div class="time">2:20–2:40</div><div class="performer open">OPEN</div></div>
-          <div class="row"><div class="time">2:40–3:00</div><div class="performer open">OPEN</div></div>
+          <div class="row"><div class="time">12:40–1:00</div><div class="performer">DJ Woodear</div></div>
+          <div class="row"><div class="time">1:00–1:20</div><div class="performer open">OPEN (DJ Woodear if remains open)</div></div>
+          <div class="row"><div class="time">1:20–1:40</div><div class="performer open">OPEN (DJ Woodear if remains open)</div></div>
+          <div class="row"><div class="time">1:40–2:00</div><div class="performer open">OPEN (DJ Woodear if remains open)</div></div>
+          <div class="row"><div class="time">2:00–2:20</div><div class="performer open">OPEN (DJ Woodear if remains open)</div></div>
+          <div class="row"><div class="time">2:20–2:40</div><div class="performer open">OPEN (DJ Woodear if remains open)</div></div>
+          <div class="row"><div class="time">2:40–3:00</div><div class="performer open">OPEN (DJ Woodear if remains open)</div></div>
         </div>
       </div>
     </section>
-
     <section id="haven" class="panel">
       <div class="stage-card">
         <div class="stage-head" style="background:var(--haven)">
@@ -211,14 +200,13 @@
           <div class="row"><div class="time">12:40–1:00</div><div class="performer">Eden</div></div>
           <div class="row"><div class="time">1:00–1:20</div><div class="performer">Sophie Chamblin and Ajika Sawyer</div></div>
           <div class="row"><div class="time">1:20–1:40</div><div class="performer open">OPEN</div></div>
-          <div class="row"><div class="time">1:40–2:00</div><div class="performer">The Smiffenpoofs</div></div>
+          <div class="row"><div class="time">1:40–2:00</div><div class="performer open">OPEN</div></div>
           <div class="row"><div class="time">2:00–2:20</div><div class="performer open">OPEN</div></div>
           <div class="row"><div class="time">2:20–2:40</div><div class="performer open">OPEN</div></div>
           <div class="row"><div class="time">2:40–3:00</div><div class="performer open">OPEN</div></div>
         </div>
       </div>
     </section>
-
     <section id="tyler" class="panel">
       <div class="stage-card">
         <div class="stage-head" style="background:var(--tyler)">
@@ -228,7 +216,7 @@
         <div class="schedule">
           <div class="row"><div class="time">12:00–12:20</div><div class="performer open">OPEN</div></div>
           <div class="row"><div class="time">12:20–12:40</div><div class="performer open">OPEN</div></div>
-          <div class="row"><div class="time">12:40–1:00</div><div class="performer">Alice Bae &amp; Mateenah</div></div>
+          <div class="row"><div class="time">12:40–1:00</div><div class="performer open">OPEN</div></div>
           <div class="row"><div class="time">1:00–1:20</div><div class="performer open">OPEN</div></div>
           <div class="row"><div class="time">1:20–1:40</div><div class="performer open">OPEN</div></div>
           <div class="row"><div class="time">1:40–2:00</div><div class="performer open">OPEN</div></div>
