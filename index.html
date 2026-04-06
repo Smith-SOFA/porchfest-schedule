@@ -13,7 +13,6 @@
       --border:#ddd7cf;
       --capen:#4c9985;
       --chapin:#0097b2;
-      --haven:#f6d240;
       --tyler:#f6a347;
       --accent:#3b4a63;
     }
@@ -44,7 +43,7 @@
       line-height:1.15;
     }
     .sub{
-      color:#374151;
+      color:var(--muted);
       font-size:.98rem;
       margin:0;
     }
@@ -62,7 +61,7 @@
     }
     .tablist{
       display:grid;
-      grid-template-columns:repeat(4,1fr);
+      grid-template-columns:repeat(3,1fr);
       gap:8px;
     }
     button.tab{
@@ -118,20 +117,21 @@
       font-size:.98rem;
     }
     .open{
-      color:#374151;
+      color:var(--muted);
       font-style:italic;
     }
     .foot{
       margin-top:16px;
-      color:#374151;
+      color:var(--muted);
       font-size:.88rem;
       text-align:center;
     }
     @media (max-width:520px){
-      .tablist{grid-template-columns:repeat(2,1fr)}
+      .tablist{grid-template-columns:repeat(3,1fr)}
       .row{grid-template-columns:1fr; gap:2px}
       .time{margin-bottom:2px}
       h1{font-size:1.35rem}
+      button.tab{padding:10px 8px; font-size:.88rem;}
     }
   </style>
 </head>
@@ -145,7 +145,7 @@
 
     <div class="tabs">
       <div class="tablist">
-        <button class="tab active" data-target="capen" style="background:var(--capen)">Capen</button> <button class="tab" data-target="chapin" style="background:var(--chapin)">Chapin</button> <button class="tab" data-target="haven" style="background:var(--haven)">Haven–Wesley</button> <button class="tab" data-target="tyler" style="background:var(--tyler)">Tyler</button>
+        <button class="tab active" data-target="capen" style="background:var(--capen)">Capen</button> <button class="tab" data-target="chapin" style="background:var(--chapin)">Chapin</button> <button class="tab" data-target="tyler" style="background:var(--tyler)">Tyler</button>
       </div>
     </div>
 
@@ -173,7 +173,7 @@
       <div class="stage-card">
         <div class="stage-head" style="background:var(--chapin)">
           <h2 class="stage-title">Chapin Deck</h2>
-          <p class="stage-meta">Amplified • DJ and open sets</p>
+          <p class="stage-meta">Amplified • DJ sets</p>
         </div>
         <div class="schedule">
           <div class="row"><div class="time">12:00–12:20</div><div class="performer">DJ Woodear</div></div>
@@ -188,25 +188,6 @@
         </div>
       </div>
     </section>
-    <section id="haven" class="panel">
-      <div class="stage-card">
-        <div class="stage-head" style="background:var(--haven)">
-          <h2 class="stage-title">Haven–Wesley</h2>
-          <p class="stage-meta">Acoustic only</p>
-        </div>
-        <div class="schedule">
-          <div class="row"><div class="time">12:00–12:20</div><div class="performer">Sharmila</div></div>
-          <div class="row"><div class="time">12:20–12:40</div><div class="performer">Eli Zehra</div></div>
-          <div class="row"><div class="time">12:40–1:00</div><div class="performer">Eden</div></div>
-          <div class="row"><div class="time">1:00–1:20</div><div class="performer">Sophie Chamblin and Ajika Sawyer</div></div>
-          <div class="row"><div class="time">1:20–1:40</div><div class="performer">Maya Faulstich</div></div>
-          <div class="row"><div class="time">1:40–2:00</div><div class="performer open">OPEN</div></div>
-          <div class="row"><div class="time">2:00–2:20</div><div class="performer open">OPEN</div></div>
-          <div class="row"><div class="time">2:20–2:40</div><div class="performer open">OPEN</div></div>
-          <div class="row"><div class="time">2:40–3:00</div><div class="performer open">OPEN</div></div>
-        </div>
-      </div>
-    </section>
     <section id="tyler" class="panel">
       <div class="stage-card">
         <div class="stage-head" style="background:var(--tyler)">
@@ -214,11 +195,11 @@
           <p class="stage-meta">Flexible performance space</p>
         </div>
         <div class="schedule">
-          <div class="row"><div class="time">12:00–12:20</div><div class="performer open">OPEN</div></div>
-          <div class="row"><div class="time">12:20–12:40</div><div class="performer open">OPEN</div></div>
-          <div class="row"><div class="time">12:40–1:00</div><div class="performer open">OPEN</div></div>
-          <div class="row"><div class="time">1:00–1:20</div><div class="performer open">OPEN</div></div>
-          <div class="row"><div class="time">1:20–1:40</div><div class="performer open">OPEN</div></div>
+          <div class="row"><div class="time">12:00–12:20</div><div class="performer">Sharmila</div></div>
+          <div class="row"><div class="time">12:20–12:40</div><div class="performer">Eli Zehra</div></div>
+          <div class="row"><div class="time">12:40–1:00</div><div class="performer">Eden</div></div>
+          <div class="row"><div class="time">1:00–1:20</div><div class="performer">Sophie Chamblin and Ajika Sawyer</div></div>
+          <div class="row"><div class="time">1:20–1:40</div><div class="performer">Maya Faulstich</div></div>
           <div class="row"><div class="time">1:40–2:00</div><div class="performer open">OPEN</div></div>
           <div class="row"><div class="time">2:00–2:20</div><div class="performer open">OPEN</div></div>
           <div class="row"><div class="time">2:20–2:40</div><div class="performer open">OPEN</div></div>
